@@ -297,14 +297,23 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 1000px;       /* limite opcional */
-    margin: 2rem auto;      /* centra el video */
-    padding-bottom: 56.25%; /* relación 16:9 */
+    max-width: 1200px; 
+    margin: 2rem auto;
+    padding-bottom: 56.25%;
     height: 0;
 }
+
+@media (min-width: 992px) {
+    .video-container {
+        margin-left: calc(-5%);
+        margin-right: calc(-5%);
+    }
+}
+
 
 .video-container iframe {
     position: absolute;
