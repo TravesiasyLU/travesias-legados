@@ -83,7 +83,7 @@ body {
 
 /* Sección hero */
 .hero {
-    background: linear-gradient(135deg, #1b2a41 0%, #31435d 50%, #f2f2f2 50%, #ffffff 100%);
+    background-color: #dfe7f3; /* azul claro uniforme */
     padding: 3rem 0 2.5rem 0;
 }
 
