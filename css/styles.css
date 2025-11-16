@@ -16,10 +16,10 @@ body {
 
 /* Encabezado y navegación */
 .site-header {
-    background-color: #1b2a41; /* azul oscuro */
+    background-color: #1b2a41;
     color: #ffffff;
-    padding: 0.8rem 0;
-    border-bottom: 4px solid #c9a44f; /* dorado */
+    padding: 1.2rem 0;
+    border-bottom: 4px solid #c9a44f;
 }
 
 .header-content {
@@ -31,11 +31,11 @@ body {
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .logo-img {
-    max-height: 72px;
+    max-height: 108px;
     width: auto;
 }
 
@@ -197,18 +197,26 @@ body {
 
 /* Galería */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;          /* permite varias filas si hay muchas imágenes */
+    justify-content: center;  /* centra horizontalmente el conjunto */
+    gap: 2rem;                /* separación entre imágenes */
     margin-top: 1.5rem;
 }
 
 .gallery-item {
     border-radius: 0.75rem;
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 0.9rem;
+    padding: 0;   /* o reduzca el padding si lo desea */
 }
+
+.gallery-photo {
+    display: block;
+    width: 220px;        /* ancho fijo para todas */
+    height: 220px;       /* alto fijo para todas */
+    object-fit: cover;   /* recorta la imagen para que llene el cuadro sin deformarse */
+    border-radius: 0.75rem;
+}
+
 
 /* Placeholders de galería */
 .placeholder {
