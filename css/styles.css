@@ -300,7 +300,7 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px;       /* limite opcional */
+    max-width: 1000px;       /* limite opcional */
     margin: 2rem auto;      /* centra el video */
     padding-bottom: 56.25%; /* relación 16:9 */
     height: 0;
